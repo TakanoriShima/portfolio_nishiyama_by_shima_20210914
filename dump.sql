@@ -141,7 +141,7 @@ CREATE TABLE `template_item_relations` (
 
 LOCK TABLES `template_item_relations` WRITE;
 /*!40000 ALTER TABLE `template_item_relations` DISABLE KEYS */;
-INSERT INTO `template_item_relations` VALUES (1,1,1,'2021-09-14 02:53:12'),(2,1,2,'2021-09-14 02:53:12'),(3,1,3,'2021-09-14 02:53:12'),(4,1,4,'2021-09-14 02:53:12'),(5,2,2,'2021-09-14 02:53:12'),(6,2,3,'2021-09-14 02:53:12');
+INSERT INTO `template_item_relations` VALUES (1,1,1,'2021-09-14 02:53:12'),(2,1,2,'2021-09-14 02:53:12'),(3,1,3,'2021-09-14 02:53:12'),(4,1,4,'2021-09-14 02:53:12'),(5,2,2,'2021-09-14 02:53:12'),(6,2,3,'2021-09-14 02:53:12'),(7,3,1,'2021-09-14 02:53:12');
 /*!40000 ALTER TABLE `template_item_relations` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -191,7 +191,7 @@ CREATE TABLE `templates` (
 
 LOCK TABLES `templates` WRITE;
 /*!40000 ALTER TABLE `templates` DISABLE KEYS */;
-INSERT INTO `templates` VALUES (1,'テンプレートA','2021-09-14 02:51:58'),(2,'テンプレートB','2021-09-14 02:51:58');
+INSERT INTO `templates` VALUES (1,'テンプレートA','2021-09-14 02:51:58'),(2,'テンプレートB','2021-09-14 02:51:58'),(3,'テンプレートC','2021-09-14 02:51:58');
 /*!40000 ALTER TABLE `templates` ENABLE KEYS */;
 UNLOCK TABLES;
 
