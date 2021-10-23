@@ -13,6 +13,7 @@
                     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_CLASS,   //デフォルトのフェッチモードはクラス
                     PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8',   //MySQL サーバーへの接続時に実行するコマンド
                   );
+                //   $nishiyama = new User('西山', 25);
                 $pdo = new PDO('mysql:host=localhost;dbname=nishiyama', 'root', '', $options);
                 return $pdo;
                 
@@ -22,10 +23,10 @@
         }
         
         // データベースとの切断を行うメソッド
-        protected static function close_connection($pdo, $stmp){
+        protected static function close_connection($pdo, $stmt){
             try {
                 $pdo = null;
-                $stmp = null;
+                $stmt = null;
             } catch (PDOException $e) {
                 return 'PDO exception: ' . $e->getMessage();
             }

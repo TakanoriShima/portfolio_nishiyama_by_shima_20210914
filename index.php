@@ -5,6 +5,9 @@
     
     $comparison_templates = ComparisonTemplate::all();
     
+    // $c = new ComparisonTemplate();
+    // $c->all();
+    
     // var_dump($comparison_templates);
     // foreach($comparison_templates as $value){
     //     // var_dump($value);

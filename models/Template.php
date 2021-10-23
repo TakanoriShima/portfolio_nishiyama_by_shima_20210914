@@ -29,7 +29,7 @@
         public static function items($template_id){
             try {
                 $pdo = self::get_connection();
-                $stmt = $pdo->prepare('SELECT template_items.id, template_items.name, template_items.created_at FROM template_items JOIN template_item_relations ON template_items.id=template_item_relations.template_item_id WHERE template_item_relations.template_id=:template_id');
+                $stmt = $pdo->prepare('SELECT template_items.id, template_items.name, template_items.created_at FROM template_items JOIN template_item_relations ON template_items.id=template_item_relations.template_item_id WHERE template_item_relations.template_id=:template_id ORDER BY template_items.id');
                 // バインド処理
                 $stmt->bindValue(':template_id', $template_id, PDO::PARAM_INT);
                 // 実行

@@ -19,7 +19,7 @@
                 <td><?= $comparison_template->name ?></td>
                 <td><?= count($comparison_template->products())?></td>
             </tr>
-        <?php endforeach; ?>
+            <?php endforeach; ?>
         </table>
         
         <p><a href="comparison_template_create.php">比較商品登録へ</a></p>

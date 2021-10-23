@@ -19,7 +19,7 @@
                 // フェッチの結果を、Templateクラスのインスタンスにマッピングする
                 $stmt->setFetchMode(PDO::FETCH_CLASS|PDO::FETCH_PROPS_LATE, 'ComparisonTemplate');
                 $templates = $stmt->fetchAll();
-                self::close_connection($pdo, $stmp);
+                self::close_connection($pdo, $stmt);
                 // テンプレートクラスの全インスタンスの配列を返す
                 return $templates;
             } catch (PDOException $e) {
